@@ -1,0 +1,356 @@
+/* Reset Css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.clear{
+    clear: both;
+}
+.text-pink {
+    color:rgb(189, 15, 151) !important ;
+}
+#main{
+
+}
+#header{
+    height: 46px;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+#nav{
+    display: inline-block;
+}
+#nav, .subnav{
+    list-style-type: none;
+}
+#nav >li {
+    display: inline-block;
+}
+#nav li {
+    position: relative;
+    
+}
+#nav >li>a{
+    color: #fff;
+    text-transform: uppercase;
+    
+}
+#nav li a {
+    text-decoration: none;
+    padding: 0 24px;
+    line-height: 46px;
+    display: block; 
+}
+#nav li:hover .subnav {
+    display: block;
+}
+#nav .subnav li:hover a ,
+#nav >li:hover>a {
+    background-color: rgb(255, 175, 244);
+    color: #333;
+}
+#nav .subnav {
+    display: none;   
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgb(0, 0 ,0 ,0.3);
+   
+}
+#nav .subnav a {
+    color: #000;
+    background-color: #fff;
+    padding: 0 24px;
+    line-height: 46px;
+}
+#nav .nav-arrow-down {
+    font-size: 14px;
+}
+#header .search-btn:hover{
+    background-color: rgb(255, 175, 244);
+    color: #333;
+    cursor: pointer;
+}
+#header .search-btn{
+  float: right;
+  padding: 0 21px;
+}
+#header .search-icon{
+   color: #fff;
+   font-size: 18px;
+   line-height: 46px;   
+}
+
+#slider{
+    
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('/assets/img/Slider/Slider3/BlackPink.jpg') top center / cover no-repeat;
+    
+}
+#slider .text-content{
+    position: absolute;
+    color: rgb(255, 175, 244);
+    bottom: 48px;
+    width:100%;
+    text-align: center;
+}
+#slider .text-heading{
+    font-weight: 3000;
+    font-size: 30px;
+}
+#slider .text-description{
+    font-weight: 800;
+    margin-top: 5px;
+}
+#content{
+      
+}
+#content .content-section{
+    width: 1100px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 0;
+    padding-left:16px ;
+    padding-right: 16px;
+    
+}
+#content .section-heading {
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: 2px;
+    color:rgb(189, 15, 151);
+    background-color: black;
+    border-radius: 30px;
+    
+
+}
+#content .section-sub-heading{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.8;
+}
+#content .about-text{
+    text-align: justify;
+    font-size: 15px;
+    margin-top: 25px;
+    line-height: 1.6;
+    color: rgb(0, 0, 0);
+}
+#content .member-list {
+    margin-top: 48px;
+    overflow: hidden;
+}
+#content .member-item{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+#content .member-name{
+    font-size: 16px;
+    color: rgb(189, 15, 151) ;
+    font-weight: 800;
+}
+#content .member-img{
+    margin-top: 10px;
+    width: 200px;
+    border-radius: 30px;
+}
+#content .member-img:hover{
+    opacity: 0.5;
+}
+/* tour-section */
+.tour-section {
+    background-color: rgb(0, 0, 0);
+}
+.tickets-list{
+    margin-top: 40px;
+    list-style-type: none;
+    
+}
+.tickets-list li {
+    font-size: 16px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+    color: #757575;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.tickets-list .sold-out{
+    background-color: rgb(255, 175, 244);
+    color: #fff;
+    padding: 3px 4px;
+    margin-left: 20px;
+    border-radius: 5px;
+
+}
+.tickets-list .quatity{
+    float: right;
+    background-color: rgb(255, 175, 244);
+    color: #fff;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    margin-top: -3px;
+}
+.place-list{
+    margin: 32px -8px 0;
+    padding-bottom: 48px;
+       
+}
+
+.place-item{
+    width: 33.33%;
+    float: left;
+    padding: 0 8px;
+}
+
+.place-img{
+    width: 100%;
+    display: block;
+    border-radius: 10px;  
+}
+.place-img:hover{
+    opacity: 0.7;
+    cursor:pointer ;
+}
+
+.place-body{
+    background-color: rgb(253, 193, 245);
+    padding: 16px;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 10px;
+ }
+.place-heading{
+    color: rgb(235, 18, 224);
+
+}
+
+.place-time{
+    margin-top:15px ;
+    color:#757575 ;
+
+}
+
+.place-desc{
+    margin-top:15px ;
+    line-height: 1.6;
+    
+    
+}
+
+.place-buy-btn{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    background-color: rgb(44, 29, 29);
+    padding: 10px 9px;
+    border-radius: 16px;
+    font-size: 17px;
+    margin-top: 16px;
+
+}
+.place-buy-btn:hover {
+    background-color: #fff;
+    color: rgb(235, 18, 224);
+    
+    
+}
+
+.contact{
+    margin-top: 48px;
+    
+
+}
+.noi-dung{
+    font-size: 18px;
+    font-weight: 300;
+    
+    
+}
+.ti-location-pin,.ti-mobile,.ti-email{
+    width: 30px;
+    display: inline-block;
+    padding: 5px;
+    background-color: rgb(235, 157, 218);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.Bia{
+    text-align: center;
+    border-radius: 5px;
+}
+.member-img-logo{
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
+.section-map{
+    text-align: center;
+
+}
+    
+    
+
+.map{
+     width: 300px;
+     padding-bottom: 20px;
+     /* margin: 20px; */
+      
+}
+
+#footer{
+    text-align: center;
+    
+    
+}
+#footer .social{
+     
+}
+#footer .social a{
+    text-decoration: none;
+    color: rgb(143, 146, 146);
+    font-size: 30px;
+    padding: 4px;
+}
+#footer .social a:hover{
+    color: aqua;
+}
+.copy-right{
+    margin-bottom: 30px;
+    font-size: 14px;
+    font-style: italic;
+    opacity: 0.8;
+}
+/* Tablet */
+@media (max-width:1025px) and (min-width:740px){
+    #content .member-item {
+        width: 50%;
+    }
+
+}
+
+/* Mobile */
+
+
